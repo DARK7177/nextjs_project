@@ -2,7 +2,7 @@
 import React from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faCaretDown, faBookmark, faBell, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faCaretDown, faBookmark, faBell, faShoppingCart , faStar ,faCompass ,caret} from '@fortawesome/free-solid-svg-icons';
 import DropdownComponent from './dropdown/dropdown';
 
 const Header = () => {
@@ -18,11 +18,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src="https://via.placeholder.com/50" alt="hobbycue logo" className="logo-image" />
-        <div className="brand">
-          <span className="brand-name">hobbycue</span>
-          <span className="tagline">Your Hobby, Your Community</span>
-        </div>
+        <img src="./Logo.png" alt="logo"/>
       </div>
       <div className="search-bar">
         <input type="text" placeholder="Search here..." className="search-input" />
@@ -31,11 +27,11 @@ const Header = () => {
         </button>
       </div>
       <nav className="nav">
-        <ul>
-          <li><DropdownComponent title="Explore" items={items}/></li>
+        <ul id='dropdown'>
+          <li><FontAwesomeIcon icon={faCompass}/><DropdownComponent title="Explore" items={items}/></li>
         </ul>
         <ul>
-          <li><a href="#">Hobbies <FontAwesomeIcon icon={faCaretDown} /></a></li>
+          <li><FontAwesomeIcon icon={faStar}/><a href="#">Hobbies </a><FontAwesomeIcon icon= {faCaretDown} /></li>
           <li><a href="#"><FontAwesomeIcon icon={faBookmark} /></a></li>
           <li><a href="#"><FontAwesomeIcon icon={faBell} /></a></li>
           <li><a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a></li>

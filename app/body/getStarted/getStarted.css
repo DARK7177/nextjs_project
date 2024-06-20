@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+}
+
+.getstarted-container {
+    text-align: center;
+    padding: 2.5%;
+    margin: 4%;
+}
+
+.gs-text {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+.gs-text p{
+    margin: 0 2.5rem;
+}
+
+.gs-text .hobby {
+    color: #6a1b9a; /* Color for "Hobby" */
+}
+
+.gs-text .community {
+    color: #3498db; /* Color for "Community" */
+}
+
+.gs-button {
+    margin-top: 20px;
+    display: flex;
+    margin : 2rem 0;
+}
+
+.gs-button button {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 2.5rem;
+}
+
+.gs-button button:hover {
+    background-color: #5e1584;
+}
+
+.gs-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.gs-images img {
+    width: 150px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.gs-images img:hover {
+    transform: scale(1.1);
+}

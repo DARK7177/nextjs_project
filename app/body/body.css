@@ -1,0 +1,51 @@
+.container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.body_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px ;
+
+}
+
+.inner_content {
+    width: 60%;
+}
+
+.auth_section {
+    width: 35%;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #6a1b9a;
+}
+
+.para {
+    margin-bottom: 20px;
+}
+
+.text {
+    margin-bottom: 10px;
+}
+
+.img {
+    text-align: center;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.cards, .auth_section, .reviews, .getstarted, .links {
+    margin-top: 20px;
+}

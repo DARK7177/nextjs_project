@@ -12,16 +12,14 @@
   font-size: 16px;
   color: #333;
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
-  padding: 10px 15px;
 }
 
-.dropdown-toggle .caret {
-  margin-left: 5px;
-  transition: transform 0.3s ease;
+.dropdown-toggle #icon{
+  margin: 5px;
 }
-
-.dropdown-menu {
+.dropdown .dropdown-menu {
   display: block;
   position: absolute;
   background-color: #fff;
