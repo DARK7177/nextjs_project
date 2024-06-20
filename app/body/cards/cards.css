@@ -4,20 +4,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:20px
+    gap: 20px;
+    padding: 2.5%;
 }
 
 .inbuild {
     display: flex;
-    width: 1240px;
-    height: 618px;
+    /* width: 1240px;
+    height: 618px; */
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: fit-content;
+    padding: 4%;
+    margin: 2%;
 }
 
-.boxes1, .boxes2 {
+.boxes1,
+.boxes2 {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -26,8 +30,8 @@
 
 }
 
-.box{
-    flex:1;
+.box {
+    flex: 1;
     border-radius: 10px;
     background-color: #fff;
     padding: 20px;
@@ -40,7 +44,7 @@
     margin: 12px 25px;
 }
 
-.box:hover{
+.box:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
@@ -79,12 +83,15 @@
 .boxes1 .box:first-child .headings {
     color: #6a1b9a;
 }
+
 .boxes1 .box:nth-child(2) .headings {
     color: #d32f2f;
 }
+
 .boxes2 .box:nth-child(1) .headings {
     color: #388e3c;
 }
+
 .boxes2 .box:nth-child(2) .headings {
     color: #0288d1;
 }
@@ -104,25 +111,30 @@
 .boxes2 .box:nth-child(2) .btn {
     background-color: #0288d1;
 }
+
 /* Custom Section */
 .custom {
     /* background-color: #f5f5f5; */
     border-radius: 10px;
-    margin: 2.55%;
-    padding : 4%;
+    margin: 2%;
+    padding: 4%;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: auto;
+    flex-wrap: wrap;
 }
 
-.custom_container{
+.custom_container {
     background-color: #fff;
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.07);
+    height: inherit;
+    margin: 10px 0;
+    padding: 20px;
 }
 
 .customHead {
@@ -135,7 +147,7 @@
 }
 
 
-.custom p{
+.custom p {
     font-size: 1.2em;
     text-align: left;
     margin: 2vw;
@@ -150,4 +162,54 @@
 
 .custom .btn:hover {
     background-color: #00695c;
+}
+
+/* Media query for screens with width 1200px or less */
+@media (max-width: 1200px) {
+    .cardscontainer {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .inbuild {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .boxes1,
+    .boxes2 {
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .box {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .custom {
+        height: fit-content;
+        width: 92%;
+    }
+
+    .custom_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
+    }
+
+    .custom p {
+        text-align: center;
+    }
+
+    .custom .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

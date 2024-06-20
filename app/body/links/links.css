@@ -80,3 +80,39 @@ li {
     margin-top: 20px;
     text-align: center;
 }
+
+/* Styles for screens with width 1200px or less */
+@media (max-width: 1200px) {
+    .links-innercontainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .info, .help, .links, .social {
+        flex: none;
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .social_icons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .invite {
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .invite input[type="email"], .invite button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .innercontainer2 {
+        margin-top: 40px;
+        padding: 10px 0;
+    }
+}

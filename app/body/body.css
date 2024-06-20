@@ -8,8 +8,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px ;
-
+    padding: 20px;
+    flex-wrap: wrap; /* This helps to wrap the content for smaller screens */
 }
 
 .inner_content {
@@ -46,6 +46,39 @@ h2 {
     height: auto;
 }
 
-.cards, .auth_section, .reviews, .getstarted, .links {
+.cards, .auth_section, .testimonialCard .getstarted, .links {
     margin-top: 20px;
+}
+
+.testimonialCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* .cards ,.reviews ,.getstarted,.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+@media (max-width: 1200px) {
+    .body_content {
+        flex-direction: column;
+    }
+
+    .inner_content {
+        width: 100%;
+        order: 1; 
+    }
+
+    .auth_section {
+        width: 100%;
+        order: 2; 
+    }
+
+    .img img{
+        width: 100%;
+        order: 3; 
+    }
 }

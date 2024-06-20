@@ -17,9 +17,6 @@ body {
     text-align: left;
 }
 
-.gs-text p{
-    margin: 0 2.5rem;
-}
 
 .gs-text .hobby {
     color: #6a1b9a; /* Color for "Hobby" */
@@ -44,27 +41,75 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin: 0 2.5rem;
+    /* margin: 0 2.5rem; */
+    min-width: 100px;
 }
 
 .gs-button button:hover {
     background-color: #5e1584;
 }
 
-.gs-images {
+.gs-img {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
 }
 
-.gs-images img {
-    width: 150px;
+.gs-img img {
+    width: 90vw;
     height: auto;
     margin: 0 10px;
     transition: transform 0.3s ease;
 }
 
-.gs-images img:hover {
+.gs-img img:hover {
     transform: scale(1.1);
+}
+
+/* Media query for screens with width 1200px or less */
+@media (max-width: 1200px) {
+    .getstarted-container {
+        padding: 4vw;
+        /* margin: 2%; */
+    }
+
+    .gs-text {
+        font-size: 2em;
+        /* text-align: center; */
+        /* margin-bottom: 20px; */
+    }
+
+    .gs-text p {
+        /* margin: 0 1.5rem; */
+        padding: 0rem;
+        /* font-size: 0.9em; */
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .gs-button {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+        align-items: start;
+    }
+
+    .gs-button button {
+        width: 20%;
+        margin: 10px 0;
+        padding: 12px 20px;
+        font-size: 0.9em;
+    }
+
+    .gs-img {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .gs-img img {
+        width: 80vw;
+        margin: 10px 0;
+    }
 }

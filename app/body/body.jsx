@@ -4,7 +4,7 @@ import './Body.css'
 import Sign from './auth/sign'
 import Getstarted from './getStarted/getStarted'
 import Cards from './cards/cards'
-import Review from './Testimonials/testimonials'
+import TestimonialCard from './Testimonials/testimonials'
 import Links from './links/links'
 
 const BodyComponent = () => {
@@ -29,13 +29,13 @@ const BodyComponent = () => {
                 <div className='cards'>
                     <Cards />
                 </div>
-                <div>
-                    <Review />
+                <div className='testimonialCard'>
+                    <TestimonialCard/>
                 </div>
-                <div>
+                <div className='getstarted'>
                     <Getstarted />
                 </div>
-                <div>
+                <div className='links'>
                     <Links />
                 </div>
             </div>

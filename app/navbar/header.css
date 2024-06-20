@@ -1,5 +1,3 @@
-/* src/components/Header.css */
-
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -16,8 +14,9 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  width: auto;
+  width: 100%;
   height: 80px;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -46,36 +45,9 @@ body {
   color: #555;
 }
 
-.search-bar {
+.nav {
   display: flex;
   align-items: center;
-  flex-grow: 1;
-  max-width: 300px;
-  margin: 0 20px;
-}
-
-.search-input {
-  padding: 7px;
-  border: 1px solid #7d3ebf;
-  border-radius: 4px 0 0 4px;
-  flex-grow: 1;
-}
-
-.search-button {
-  padding: 8px;
-  background-color: #7d3ebf;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  color: #fff;
-  cursor: pointer;
-}
-
-.search-button:hover {
-  background-color: #5d2ca6;
-}
-
-nav{
-  display: flex;
 }
 
 .nav ul {
@@ -86,44 +58,95 @@ nav{
 }
 
 .nav ul li {
-  margin: 20px;
+  margin: 0 20px;
   display: flex;
   align-items: center;
 }
 
-.nav ul li a {
+.nav ul li a,
+.nav ul li button {
   text-decoration: none;
   color: #333;
   font-size: 16px;
   display: flex;
   align-items: center;
-  margin: 0.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
-
-/* .nav ul li a:hover {
-  color: #7d3ebf;
-} */
 
 .sign-in {
   border: 1px solid #7d3ebf;
   padding: 5px 15px;
   border-radius: 4px;
-  /* color: #7d3ebf; */
   font-weight: bold;
-} 
+}
 
 .sign-in:hover {
   background-color: #7d3ebf;
   color: #fff;
 }
 
-.sign-in a:hover{
-  color : #fff
+.icon-button {
+  font-size: 24px;
+  color: #7d3ebf;
+  margin-left: 20px;
 }
-.fas {
-  margin-left: 5px;
+
+.icon-button:hover {
+  color: #5d2ca6;
+}
+
+.menu-toggle {
+  display: none;
 }
 
 #dropdown {
   display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav ul li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    color: #7d3ebf;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+  }
 }
