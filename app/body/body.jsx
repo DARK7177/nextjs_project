@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import './Body.css'
+import './body.css'
 import Sign from './auth/sign'
 import Getstarted from './getStarted/getStarted'
 import Cards from './cards/cards'

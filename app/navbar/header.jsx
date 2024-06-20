@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import './Header.css';
+import './header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBell, faBars, faStar, faCompass, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import DropdownComponent from './dropdown/dropdown';
