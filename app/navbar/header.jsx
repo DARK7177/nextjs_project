@@ -32,7 +32,7 @@ const Header = () => {
       </div>
       <nav className="nav">
         <ul>
-          <li><DropdownComponent title="Explore" items={items} FontAwesomeIcon icon={faCaretDown} /></li>
+          <li><DropdownComponent title="Explore" items={items}/></li>
         </ul>
         <ul>
           <li><a href="#">Hobbies <FontAwesomeIcon icon={faCaretDown} /></a></li>

@@ -1,0 +1,25 @@
+.cardscontainer {
+    display: flex;
+    width: 1440px;
+    height: 818px;
+    top: 758px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inbuild {
+    display: flex;
+    width: 1240px;
+    height: 618px;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.box {
+    width: 608px;
+    height: 297px;
+    border:2px solid rgba(206, 212, 218, 1);
+    border-radius: 7px;
+    margin: 5%;
+}
